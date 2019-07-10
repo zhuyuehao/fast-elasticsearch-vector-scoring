@@ -65,8 +65,9 @@ public class PluginTest {
 
     @Test
     public void test() throws Exception {
+        float[] feature = VectorConvertUtils.getFeatureFloat(DemoData.VECTOR_STRING);
         final ObjectMapper mapper = new ObjectMapper();
-        final TestObject[] objs = {new TestObject(1, new float[] {0.0f, 0.5f, 1.0f}),
+        final TestObject[] objs = {new TestObject(1, feature),
                 new TestObject(2, new float[] {0.2f, 0.6f, 0.99f})};
 
         for (int i = 0; i < objs.length; i++) {
@@ -163,4 +164,10 @@ public class PluginTest {
         }
     }
 
+
+    @Test
+    public void testF(){
+        float f = 0.2331313133231f;
+        System.out.println(f);
+    }
 }
