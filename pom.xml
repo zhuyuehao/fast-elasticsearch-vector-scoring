@@ -7,7 +7,7 @@
     <name>elasticsearch-binary-vector-scoring</name>
     <groupId>com.liorkn.elasticsearch</groupId>
     <artifactId>elasticsearch-binary-vector-scoring</artifactId>
-    <version>7.1.0</version>
+    <version>6.7.1</version>
     <description>ElasticSearch Plugin for Binary Vector Scoring</description>
     
     <licenses>
@@ -27,7 +27,7 @@
         <elasticsearch.license.headerDefinition>${project.basedir}/src/main/resources/license-check/license_header_definition.xml</elasticsearch.license.headerDefinition>
 
         <tests.ifNoTests>warn</tests.ifNoTests>
-		<elasticsearch.version>7.1.0</elasticsearch.version>
+		<elasticsearch.version>6.7.1</elasticsearch.version>
         <commons-io.version>2.4</commons-io.version>
         <httpcore.version>4.4.8</httpcore.version>
         <junit.version>4.12</junit.version>
@@ -70,28 +70,28 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.codelibs.elasticsearch.module</groupId>
-            <artifactId>reindex</artifactId>
-            <version>${elasticsearch.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>log4j</artifactId>
-                    <groupId>log4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.codelibs.elasticsearch.module</groupId>
-            <artifactId>lang-painless</artifactId>
-            <version>${elasticsearch.version}</version>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.codelibs.elasticsearch.module</groupId>-->
+            <!--<artifactId>reindex</artifactId>-->
+            <!--<version>${elasticsearch.version}</version>-->
+            <!--<scope>test</scope>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.slf4j</groupId>-->
+                    <!--<artifactId>slf4j-log4j12</artifactId>-->
+                <!--</exclusion>-->
+                <!--<exclusion>-->
+                    <!--<artifactId>log4j</artifactId>-->
+                    <!--<groupId>log4j</groupId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.codelibs.elasticsearch.module</groupId>-->
+            <!--<artifactId>lang-painless</artifactId>-->
+            <!--<version>${elasticsearch.version}</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
