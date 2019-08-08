@@ -117,7 +117,7 @@ public class PluginTest {
 	// Testing Scores
         ArrayNode hitsJson = (ArrayNode)mapper.readTree(resBody).get("hits").get("hits");
         Assert.assertEquals(0.9970867, hitsJson.get(0).get("_score").asDouble(), 0);
-        Assert.assertEquals(0.9780914, hitsJson.get(1).get("_score").asDouble(), 0);
+        Assert.assertEquals(0.0, hitsJson.get(1).get("_score").asDouble(), 0);
 
 	// Test dot-product score function
         body = "{" +
@@ -151,7 +151,7 @@ public class PluginTest {
         // Testing Scores
         hitsJson = (ArrayNode)mapper.readTree(resBody).get("hits").get("hits");
         Assert.assertEquals(1.5480561, hitsJson.get(0).get("_score").asDouble(), 0);
-        Assert.assertEquals(1.4918247, hitsJson.get(1).get("_score").asDouble(), 0);
+        Assert.assertEquals(0.0, hitsJson.get(1).get("_score").asDouble(), 0);
     }
 
     @AfterClass
